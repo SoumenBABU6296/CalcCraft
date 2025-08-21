@@ -255,7 +255,6 @@ class main(App):
         history_filename = "history.txt"
         history_path = os.path.join(app_data_dir, history_filename)
 
-        # Check if history.txt exists in user_data_dir (where we want to read/write)
         if not os.path.exists(history_path):
             source_path_in_app = os.path.join(self.directory, history_filename)
             if os.path.exists(source_path_in_app):
@@ -575,4 +574,5 @@ class main(App):
         print("Settings button pressed!")
 
 if __name__ == "__main__":
+
     main().run()
